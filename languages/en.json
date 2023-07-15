@@ -1,4 +1,8 @@
 {
     "Soundoff.volume": "Volume",
-    "Soundoff.volumehint": "Don't blow your ears out!"
+    "Soundoff.volumehint": "Don't blow your ears out!",
+    "Soundoff.mousedroid": "Mouse Droid Sound Effect",
+    "Soundoff.bfclassic": "Battlefield Classic Sound Effect",
+    "Soundoff.sfx": "Sound Effect",
+    "Soundoff.sfxhint": "What sound effect should be played"
 }
