@@ -1,0 +1,15 @@
+{
+    "id": "soundoff",
+    "title": "Soundoff - Never Miss A Message",
+    "description": "Yeh Yah",
+    "authors": [
+      {
+      "name": "karoden"
+      }
+    ],
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": "10",
+      "verified": "10"
+    }
+  }
