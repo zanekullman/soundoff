@@ -1,15 +1,16 @@
 {
-    "id": "soundoff",
-    "title": "Soundoff - Never Miss A Message",
-    "description": "Yeh Yah",
-    "authors": [
-      {
+  "id": "soundoff",
+  "title": "Soundoff - Never Miss A Message",
+  "description": "Yeh Yah",
+  "authors": [
+    {
       "name": "karoden"
-      }
-    ],
-    "version": "1.0.0",
-    "compatibility": {
-      "minimum": "10",
-      "verified": "10"
     }
-  }
+  ],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "manifest": "https://raw.githubusercontent.com/zanekullman/soundoff/master/module.json"
+}
