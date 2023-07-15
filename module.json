@@ -30,6 +30,7 @@
   "scripts": [
     "scripts/soundoff.js"
   ],
-  "manifest": "https://raw.githubusercontent.com/zanekullman/soundoff/master/module.json",
-  "url": "https://www.github.com/zanekullman/soundoff/"
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#"
 }
