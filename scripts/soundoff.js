@@ -1,9 +1,30 @@
-console.log("Hello World! This code runs immediately when the file is loaded.");
+console.log("Soundoff | Hello World!");
 
-Hooks.on("init", function() {
-  console.log("This code runs once the Foundry VTT software begins its initialization workflow.");
-});
+const registerSettings = () => {
+  game.settings.register("soundoff", "volume", {
+    name: "Soundoff.volume",
+    hint: "Soundoff.volumehint",
+    scope: "client",
+    config: true,
+    range: {
+      min: 0,
+      max: 100,
+      step: 10,
+    },
+    default: 60,
+    type: Number,
+  });
+}
 
-Hooks.on("ready", function() {
-  console.log("This code runs once core initialization is ready and game data is available.");
-});
+const volume = () => {
+  return game.settings.get("soundoff", "volume") / 100.0;
+}
+
+function soundoff_logAlert(so_arg1, so_arg2) {
+  const d = new Date();
+  console.log("Soundoff | Alert! | " + d);
+  AudioHelper.play({ src: "md.mp3", volume: volume()})
+}
+
+Hooks.on("renderChatMessage", soundoff_logAlert);
+Hooks.once("ready", registerSettings);

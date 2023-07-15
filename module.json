@@ -1,16 +1,35 @@
 {
   "id": "soundoff",
+  "name": "soundoff",
+
   "title": "Soundoff - Never Miss A Message",
   "description": "Yeh Yah",
+
   "authors": [
     {
       "name": "karoden"
     }
   ],
+
   "version": "1.0.0",
+  "minimumCoreVersion": "0.8.8",
   "compatibility": {
     "minimum": "10",
     "verified": "10"
   },
-  "manifest": "https://raw.githubusercontent.com/zanekullman/soundoff/master/module.json"
+
+  "languages":[
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+
+  
+  "scripts": [
+    "scripts/soundoff.js"
+  ],
+  "manifest": "https://raw.githubusercontent.com/zanekullman/soundoff/master/module.json",
+  "url": "https://www.github.com/zanekullman/soundoff/"
 }
